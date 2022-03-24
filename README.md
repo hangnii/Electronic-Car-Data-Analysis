@@ -21,16 +21,27 @@
 
 ## 2. 데이터 수집
 ### 🗃 2-1. 지역별 전기차 등록 현황 데이터
-### 🗃 2-2. 시도별 전기차 보조금 데이터
+https://www.data.go.kr/data/15039554/fileData.do
+
+### 🗃 2-2. 시도별 전기차 보조금 데이터 (웹 페이지 크롤링)
+https://www.ev.or.kr/portal/buyersGuide/incenTive
+
 ### 🗃 2-3. 지역별 전기차 충전소 현황 데이터
-### 🗃 2-4. 지역별 주관적 환경인식 데이터
+https://www.data.go.kr/data/15039765/fileData.do
+
+### 🗃 2-4. 지역별 환경문제에 대한 인식 데이터
 - 현재 체감환경 : 대기
+  - https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1SSEN011R&conn_path=I2
 - 환경문제 인식 : 미세먼지 유입
+  - https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1SSEN053R&conn_path=I2
 - 환경문제 인식 : 기후변화
+  - https://kosis.kr/statHtml/statHtml.do?orgId=101&tblId=DT_1SSEN051R&conn_path=I2
+
 ### 🗃 2-5. 지역별 미세먼지 데이터
 - 초미세먼지(PM2.5)
+  - https://kosis.kr/statHtml/statHtml.do?orgId=106&tblId=DT_106N_03_0200145&conn_path=I2
 - 미세먼지(PM10)
-- 
+  - https://kosis.kr/statHtml/statHtml.do?orgId=106&tblId=DT_106N_03_0200045&conn_path=I2
 </br>
 </br>
 
@@ -43,6 +54,10 @@
 </br>
 
 ## 4. 데이터 전처리
+
+- 전국 17개 시도명 통일
+(ex. '경상북도' -> '경북', '제주특별자치도' -> '제주')
+
 
 </br>
 </br>
