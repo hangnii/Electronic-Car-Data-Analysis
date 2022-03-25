@@ -83,11 +83,11 @@ https://www.data.go.kr/data/15039765/fileData.do
 
 <img width="864" alt="image" src="https://user-images.githubusercontent.com/92846399/158545825-fe3707eb-b4f5-43de-9da8-440042a67279.png">
 
-### 📊4-3. 지역별 저공해차 보조금 현황
+### 📊4-3. 지역별 저공해차 보조금 현황(2021)
 
 <img width="912" alt="image" src="https://user-images.githubusercontent.com/92846399/160047810-3a2729a2-8151-4f80-8001-d5826a6549ba.png">
 
-### 📊4-4. 지역별 미세먼지/초미세먼지 현황
+### 📊4-4. 지역별 미세먼지/초미세먼지 현황(2021.02)
 
 <img width="881" alt="image" src="https://user-images.githubusercontent.com/92846399/158545748-59c7ff5c-79b0-478f-bbb2-df9f11ac5b13.png">
 
