@@ -5,8 +5,8 @@
 - 1.[프로젝트 소개](#1-프로젝트-소개)
 - 2.[데이터 수집](#2-데이터-수집)
 - 3.[SQL ETL](#3-SQL-ETL)
-- 4.[분석 및 시각화](#5-분석-및-시각화)
-- 5.[REIVEW](#6-REVIEW)
+- 4.[분석 및 시각화](#4-분석-및-시각화)
+- 5.[REIVEW](#5-REVIEW)
 
 ----
 </br>
@@ -15,8 +15,15 @@
 ## 1. 프로젝트 소개
 
 - 전기차 수요와 공급이 빠르게 증가하고 있는 요즈음, 전기차 구매에 영향을 미치는 요인으로서 환경이라는 변수가 가지는 의미에 대해 분석하고자 함.
+
+<br/>
+
 - 지역별 전기차 현황과 지역별 대기환경 및 주관적 환경 인식이 상관관계가 있지 않을까 하는 질문에서 출발하여, 각각의 데이터를 수집하고 각 데이터의 양상 및 상관관계 분석을 수행한 EDA 프로젝트. 
+
+<br/>
+
 - jupyter notebook에서 mysql.connector를 사용하여 데이터 ETL, 전처리를 수행, python의 pandas와 시각화 라이브러리를 활용해 각 변수와 전기차 현황과의 관계를 분석.
+
 </br>
 </br>
 </br>
@@ -48,10 +55,11 @@ https://www.data.go.kr/data/15039765/fileData.do
 </br>
 
 ## 3. SQL ETL
+
 ### 🛰️ 3-1. database 및 테이블 생성
 - `sqlproj` 데이터베이스 생성
 - 2.에서 수집한 데이터 별로 각각 테이블 생성 (총 8개)
-- 
+
 ### 🛰️ 3-2. 데이터 적재
 ### 🛰️ 3-3. 데이터 전처리
   - 전국 17개 시도명 통일
@@ -67,15 +75,23 @@ https://www.data.go.kr/data/15039765/fileData.do
 </br>
 
 ## 4. 분석 및 시각화
+### 📊4-1. 지역별 전기차 등록 현황(2018~2020)
+
 <img width="883" alt="image" src="https://user-images.githubusercontent.com/92846399/160047731-2c0aecb4-cf2b-439d-9e39-6ea3f465a0b8.png">
-<br/>
-<img width="912" alt="image" src="https://user-images.githubusercontent.com/92846399/160047810-3a2729a2-8151-4f80-8001-d5826a6549ba.png">
-<br/>
+
+### 📊4-2. 지역별 전기차 충전소 현황(2018~2020)
+
 <img width="864" alt="image" src="https://user-images.githubusercontent.com/92846399/158545825-fe3707eb-b4f5-43de-9da8-440042a67279.png">
-<br/>
+
+### 📊4-3. 지역별 저공해차 보조금 현황
+
+<img width="912" alt="image" src="https://user-images.githubusercontent.com/92846399/160047810-3a2729a2-8151-4f80-8001-d5826a6549ba.png">
+
+### 📊4-4. 지역별 미세먼지/초미세먼지 현황
+
 <img width="881" alt="image" src="https://user-images.githubusercontent.com/92846399/158545748-59c7ff5c-79b0-478f-bbb2-df9f11ac5b13.png">
 
-- 지역별 현재 체감 **대기환경**
+### 📊4-5. 지역별 현재 체감 대기환경
 
 <img width="1145" alt="image" src="https://user-images.githubusercontent.com/92846399/160047946-f9f890c9-2790-4870-903b-b949c7586bd0.png">
 
@@ -85,7 +101,7 @@ https://www.data.go.kr/data/15039765/fileData.do
 <br/>
 <br/>
 
-- 지역별 **미세먼지 유입**에 대한 인식
+### 📊4-6. 지역별 미세먼지 유입에 대한 인식
 
 <img width="1101" alt="image" src="https://user-images.githubusercontent.com/92846399/160048056-2b8b9d24-3ede-42c8-aa6d-103d6b1c1f9d.png">
 
@@ -94,7 +110,7 @@ https://www.data.go.kr/data/15039765/fileData.do
 
 <br/>
 
-- 지역별 **기후변화**에 대한 인식
+### 📊4-7. 지역별 기후변화에 대한 인식
 
 <img width="1076" alt="image" src="https://user-images.githubusercontent.com/92846399/160048332-04c0f026-4bc5-43e8-bde6-31b76ec9d93f.png">
 
@@ -103,7 +119,7 @@ https://www.data.go.kr/data/15039765/fileData.do
 
 <br/>
 
-- 변수 간 상관계수를 나타낸 히트맵
+### 📊4-8. 변수 간 상관계수를 나타낸 히트맵
 
 <img width="793" alt="image" src="https://user-images.githubusercontent.com/92846399/158545606-f2b9335a-fe86-495b-9883-8d2e89c61d58.png">
 
@@ -121,7 +137,7 @@ https://www.data.go.kr/data/15039765/fileData.do
 
 <br/>
 
-- lmplot
+### 📊4-9. lmplot
 
 <img width="582" alt="image" src="https://user-images.githubusercontent.com/92846399/160048427-29dc20db-2e7a-4eb7-a0b7-61a031152ce8.png">
 
@@ -132,9 +148,9 @@ https://www.data.go.kr/data/15039765/fileData.do
 </br>
 </br>
 
-## 6. REVIEW
+## 5. REVIEW
 
-### 결론 및 한계점
+### 🧾 결론 및 한계점
 **1. 전기차 구매 예상 요인으로 선정한 '미세먼지, 초미세먼지, 주관적 환경인식(체감 대기환경, 미세먼지 유입, 기후변화)' 변수들은 실제로 전기차 구매에 유의미한 영향을 미치지는 않는 것으로 보인다.**
 
     - 한국은 대륙의 크기가 큰 편이 아니라서 지역별 환경의 차이가 극심하지 않고, 주관적인 인식 또한 그러하다. 따라서 상관관계가 낮게 나타났을 수 있다.
